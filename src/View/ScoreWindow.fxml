@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="110.0" prefWidth="183.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label text="High score" alignment="BASELINE_CENTER" />
+      <Label text="Name  Time  Score" />
+      <Label fx:id="first" text="Label" />
+      <Label fx:id="second" text="Label" />
+      <Label fx:id="third" text="Label" />
+      <Label fx:id="fourth" text="Label" />
+      <Label fx:id="fifth" text="Label" />
+   </children>
+</VBox>

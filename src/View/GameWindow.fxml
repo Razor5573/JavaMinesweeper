@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="gameField" onMouseReleased="#actOnCell" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GameController.Controller">
+   <children>
+      <MenuBar layoutY="2.0" prefHeight="25.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="easyGame" mnemonicParsing="false" onAction="#startEasy" text="Easy (15%)" />
+                  <MenuItem fx:id="mediumGame" mnemonicParsing="false" onAction="#startMedium" text="Medium (25%)" />
+                  <MenuItem fx:id="hardGame" mnemonicParsing="false" onAction="#startHard" text="Hard (35%)" />
+                  <MenuItem fx:id="exit" mnemonicParsing="false" onAction="#exit" text="Exit" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem fx:id="highScore" mnemonicParsing="false" onAction="#showHighScore" text="High Score" />
+                  <MenuItem fx:id="clearTable" mnemonicParsing="false" onAction="#clearTable" text="delet high score" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem fx:id="about" mnemonicParsing="false" onAction="#showHelp" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label fx:id="timeSpent" layoutX="158.0" layoutY="27.0" prefHeight="17.0" prefWidth="41.0" text="Label" />
+      <Label fx:id="flagsRemainingLabel" layoutX="48.0" layoutY="27.0" prefHeight="17.0" prefWidth="28.0" text="Label" />
+   </children>
+</AnchorPane>

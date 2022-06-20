@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="dialogAnchorPane" prefHeight="181.0" prefWidth="275.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GameController.StartupWindowController">
+   <children>
+      <Label fx:id="gameStatus" layoutX="124.0" layoutY="25.0" text="Label" />
+      <Button fx:id="newGame" layoutX="86.0" layoutY="53.0" mnemonicParsing="false" onMouseClicked="#startNewGame" prefHeight="25.0" prefWidth="103.0" text="New Game" textAlignment="CENTER" />
+<!--      <Button fx:id="highScore" layoutX="101.0" layoutY="91.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="74.0" text="High Score" textAlignment="CENTER" />-->
+      <Button fx:id="exit" layoutX="121.0" layoutY="125.0" mnemonicParsing="false" onMouseClicked="#exitAction" text="Exit" textAlignment="CENTER" />
+   </children>
+</AnchorPane>
